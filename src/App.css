@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  height: 140vh;
+  width: 98vw;
   display: flex;
   flex-direction: column;
+  align-items: center;   
+}
+
+.mainBox {  
+  height: 120vh;
+  width: 63vw;
+  /* border: 1px solid black;  */
+  display: flex;
+  flex-direction: row;
   align-items: center;
+
+}
+
+#leftMainBox {
+  height: 75vh;
+  width: 35vw;
+  /* border: 1px solid black; */
+  margin-left: 30px;
+}
+#leftMainBox1{
+  height: 75vh;
+  width: 30vw;
+}
+
+#rightMainBox {
+  height: 100vh;
+  width: 30vw;
+  /* border: 1px solid rgb(197, 196, 196);
+  background-color: white; */
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  height: 30px;
+  width: 270px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#login-button{
+  height: 30px;
+  width: 270px;
+  background: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-button:hover{
+  cursor: pointer;
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: xx-large;
+}
+
+#footer{
+  display: flex;
+}
+
+.footerBox {
+  height: 15vh;
+  width: 68vw;
+  /* border: 1px solid black;    */
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+#leftFooterBox {
+  height: 25px;
+  width: 700px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#rightFooterBox {
+  height: 25px;
+  width: 300px;
+  color: rgb(228, 228, 228);
+  /* border: 1px solid black; */
+  position: right;
+}
+
+#blah{
+  display: flex;
+  border: 1px solid rgb(197, 196, 196);
+  background-color: white; 
+}
+
+#signup{
+  color: aqua;
+}
+
+.login-images{
+  height: 75pxpx;
+  width: 175px;
+}
+
+#outline1{
+  border: 1px solid rgb(197, 196, 196);
+  background-color: white;
+}
+
+.rightMainBoxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
